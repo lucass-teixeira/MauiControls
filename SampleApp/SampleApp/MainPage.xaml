@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:SampleApp.Views"
+             BackgroundColor="#424242"
+             x:Class="SampleApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+
+            <views:SmoothStack x:Name="smothStack" Spacing="10" AnimationSpeed="250" HeightRequest="300">
+                <Label Text="Lucas Feliciano de almeida"/>
+                <Entry Placeholder="Email"/>
+                <Entry Placeholder="Pasword"/>
+                <Entry Placeholder="Confirm Password"/>
+                <Button Text="Login" Clicked="Button_Clicked"/>
+            </views:SmoothStack>
+            <Button Text="IsVisible" Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
